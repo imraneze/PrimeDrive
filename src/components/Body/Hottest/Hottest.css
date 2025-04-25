@@ -1,0 +1,91 @@
+.homesection{
+    top: 20px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100vw;
+    background-color: white;
+    font-family: 'Segoe UI', sans-serif;;
+    color: black;
+}
+.homesection h3{
+    margin: 0;
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.975);
+    padding: 10px;
+    width: fit-content;
+}
+.homesection h3 hr{
+    height: 3px;
+    background-color: rgba(255, 0, 0, 0.663);
+    border-radius: 10px;
+}
+.carssection{
+    position: relative;
+    overflow: hidden;
+    width: 97%;
+    display: flex;
+}
+.section{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 2rem;
+    white-space: nowrap;
+}
+.fade-right, .fade-left{
+    position: absolute;
+    object-fit: cover;
+    width: 5%;
+    height: 100%;
+    z-index: 1;
+}
+.fade-right{
+    background: linear-gradient(to right, rgb(255, 255, 255) 60%,rgba(255, 255, 255, 0.788)70%,rgba(255, 255, 255, 0) );
+    border-radius: 0% 10% 10% 0%;
+}
+.fade-left{
+    background: linear-gradient(to left, rgb(255, 255, 255) 60%,rgba(255, 255, 255, 0.788)70%,rgba(255, 255, 255, 0) );
+    right: 0;
+    border-radius: 10% 0% 0% 10%;
+}
+.section::-webkit-scrollbar {
+    height: 6px;
+}
+  
+.section::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.section::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* light gray thumb */
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+  
+  /* On hover */
+.section::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4); /* darker on hover */
+}
+.top{
+    position: relative;
+    display: flex;
+    width: 95%;
+}
+.top button{
+    all: unset;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position:absolute;
+    height: fit-content;
+    width: fit-content;
+    right: 0;
+    top: 30%;
+    cursor: pointer;
+}
