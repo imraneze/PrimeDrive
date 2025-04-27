@@ -25,12 +25,10 @@ function Header() {
             </div>
             <ul className='List'>
                 <li>
-                    {/* <div className='bgli'></div> */}
                     Home
                     <hr />
                 </li>
                 <li>
-                    {/* <div className='bgli'></div> */}
                     <div class="dropdown">
                         <button class="dropbtn">Inventory <span className='drpdownarrow'>▾</span></button>
                         <div class="dropdown-content">
@@ -57,25 +55,22 @@ function Header() {
                     </div>
                 </li>
                 <li>
-                    {/* <div className='bgli'></div> */}
                     Financing
                     <hr />
                 </li>
                 <li>
-                    {/* <div className='bgli'></div> */}
                     Sell Your Car
                     <hr />
                 </li>
                 <li>
-                    {/* <div className='bgli'></div> */}
                     About Us
                     <hr />
                 </li>
-                <li>
-                    {/* <div className='bgli'></div> */}
+                {/* <li>
+                    
                     Contact
                     <hr />
-                </li>
+                </li> */}
             </ul>
             <div className='quote'>
                 <button class="dropbtn"><h3>Get Started <span className='drpdownarrow'>▾</span></h3></button>
@@ -91,7 +86,7 @@ function Header() {
             <h1 className='hq'>Engineered for the Bold.</h1>
             <span class="subline">Drive it. Own it. Live it.</span>
         </div>
-        <div className='morebtn'><button>Explore More</button></div>
+        <div className='morebtn'><a href="#more"><button>Explore More</button></a></div>
     </div>
   )
 }

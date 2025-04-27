@@ -20,7 +20,8 @@ function Card(props) {
         camera-orbit={orbit}
         className="models"
       />
-      <h3>{props.car.name}</h3>
+      <h3>{props.car.name}</h3><br />
+      <b>{props.car.price}</b>
       <p>{props.car.description}</p>
     </div>
   )
