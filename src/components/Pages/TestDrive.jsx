@@ -1,12 +1,14 @@
 import React from 'react'
 import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
-function Contact() {
+function TestDrive() {
   return (
     <div>
       <Header/>
+      <Footer/>
     </div>
   )
 }
 
-export default Contact
+export default TestDrive

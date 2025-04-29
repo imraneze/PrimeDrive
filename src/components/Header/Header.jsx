@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Header.css'
 import { useState } from 'react'
 
@@ -25,12 +26,12 @@ function Header() {
             </div>
             <ul className='List'>
                 <li>
-                    Home
+                   <Link to="/">Home</Link>
                     <hr />
                 </li>
                 <li>
                     <div class="dropdown">
-                        <button class="dropbtn">Inventory <span className='drpdownarrow'>▾</span></button>
+                        <button class="dropbtn"><Link to="/Inventory">Inventory</Link> <span className='drpdownarrow'>▾</span></button>
                         <div class="dropdown-content">
                             <div>
                             <h4>Porsche</h4>
@@ -55,30 +56,25 @@ function Header() {
                     </div>
                 </li>
                 <li>
-                    Financing
+                    <Link to="/Financing">Financing</Link>
                     <hr />
                 </li>
                 <li>
-                    Sell Your Car
+                <Link to="/Sell_Your_Car">Sell Your Car</Link>
                     <hr />
                 </li>
                 <li>
-                    About Us
+                <Link to="/About_Us">About Us</Link>
                     <hr />
                 </li>
-                {/* <li>
-                    
-                    Contact
-                    <hr />
-                </li> */}
             </ul>
             <div className='quote'>
                 <button class="dropbtn"><h3>Get Started <span className='drpdownarrow'>▾</span></h3></button>
                 <div class="dropdown-content">
-                    <a href="#">Log In</a>
-                    <a href="#">Sign Up</a>
-                    <a href="#">Schedule a Test Drive</a>
-                    <a href="#">Get a Quote</a>
+                    <Link to="/Log_IN">Log In</Link>
+                    <Link to="/Sign_Up">Sign Up</Link>
+                    <Link to="/Schedule_a_Test_Drive">Schedule a Test Drive</Link>
+                    <Link to="/Get_a_Quote">Get a Quote</Link>
                 </div>
             </div>
         </div>

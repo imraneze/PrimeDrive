@@ -6,8 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRankingStar,faCoins,faMoneyCheck } from '@fortawesome/free-solid-svg-icons'
 import CarsData from '../CarsData'
 import RateCard from '../Body/Card/RateCard'
+import Footer from '../Footer/Footer'
 
-function Acceuil() {
+function Home() {
 
   const Clients = [
     {name:'Sofia Ait Bensalah',description:'An incredible car buying experience! Smooth, fast, and the car quality is beyond amazing. Highly recommend!',rating:5},
@@ -65,11 +66,9 @@ function Acceuil() {
           <p >We respect your privacy. No spam, ever.</p>
         </div>
       </div>
-      <footer className="Footer">
-          <img src="" alt="bg" />
-      </footer>
+      <Footer/>
     </div>
   )
 }
 
-export default Acceuil
+export default Home

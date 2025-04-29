@@ -1,0 +1,13 @@
+.footer{
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    background: linear-gradient(white,rgba(0, 0, 0, 0.314) 10% 90%,black);
+}
+.bgImg{
+    position: absolute;
+    object-fit: cover;
+    height: 50vh;
+    width: 100vw;
+    z-index: -1;
+}
