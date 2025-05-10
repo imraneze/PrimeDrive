@@ -8,7 +8,7 @@
 }
 .mHeader{
     position: relative;
-    background:linear-gradient(rgb(0, 0, 0) 5%,rgba(0, 0, 0, 0.25) 45%,rgba(255, 255, 255, 0.877)80%,white 90%);
+    background:linear-gradient(#000000 5%,rgba(0, 0, 0, 0.25) 45%, rgba(255, 255, 255, 0.877) 80%,white 90%);
     color: #ffffff;
     height: 100vh;
     margin: 0;
