@@ -1,35 +1,37 @@
+.dropbtn h3{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 .dropdown-content h4{
   margin:0;
   width: fit-content;
 }
-.Header{
+.mHeader{
     position: relative;
     background:linear-gradient(rgb(0, 0, 0) 5%,rgba(0, 0, 0, 0.25) 45%,rgba(255, 255, 255, 0.877)80%,white 90%);
     color: #ffffff;
     height: 100vh;
     margin: 0;
-    padding: 10px;
     width: 100vw;
     align-items: center;
   }
   .Navbar{
-    position: absolute;
+    position: fixed;
     top: 0;
-    margin-left: -10px;
+    margin-left: 0px;
     display: flex;
     width: 100vw;
     height: 13vh;
     transition: 0.3s;
     z-index: 2;
+    background-color: #000000e8;
+    box-shadow: 0px 7px 10px #0a040593;
   }
   .NavBottom{
     position: fixed;
-    background-color: #000000e8;
-    box-shadow: 0px 7px 10px #43000a93;
-    border-bottom: 1px solid #ff002693;
-  }
-  .NavMid{
-    top: -13vh;
+    border-bottom: 1px solid #af000093;
+    box-shadow: 0px 7px 10px #630000ae;
+    top: 0;
   }
   .headerquote{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -65,7 +67,7 @@
     margin-top: 10px;
     display: inline-block;
   }
-  .Header img{
+  .mHeader img{
     position: absolute;
     object-fit: cover;
     object-position: center 60%;
@@ -77,7 +79,8 @@
   .Logo{
     width: fit-content;
     margin: 10px;
-    margin-top: 20px;
+    color: white;
+    margin-top:1vh;
     padding: 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: fit-content;
@@ -85,7 +88,7 @@
   .Logo h1{
     margin: 0;
   }
-  .List{
+  .mList{
     position: absolute;
     display: flex;
     padding: 10px;
@@ -98,40 +101,46 @@
     width: fit-content;
     
   }
-  .List li{
+  .mList li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    top: 0;
     position: relative;
     list-style: none;
-    text-align: center;
+    text-align: center !important;
     font-size: larger;
     font-weight: bold;
     height: 25px;
     width: fit-content;
-    padding: 30px;
-    padding-top: 5px;
+    margin: 30px;
     padding-bottom: 5px;
     transition: .5s;
   }
-  .List li:hover{
+  
+  .mList li:hover{
     transform:scale(120%);
     cursor: pointer;
-    color: white;
+    color: white !important;
     width: fit-content;
   }
-  .List li:hover hr{
+  
+  .mList li:hover hr{
     width: 100%;
     border: 1px solid;
   }
-  .List li hr{
+  .mList li hr{
     color: white;
     background-color: white;
     width: 0;
     border: none;
     transition: 0.5s;
+    margin: 5px 0;
   }
   .dropdown {
     position: relative;
     height: fit-content;
-    padding-bottom: 10px;
     width: fit-content;
   }
   
@@ -147,7 +156,7 @@
     height: fit-content;
     width: fit-content;
     position: absolute;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: -20px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.874);
@@ -161,13 +170,9 @@
   .dropdown-content div{
     display: flex;
     flex-direction: column;
-    border-right: 1px solid;
     width: fit-content;
-    margin: 5px;
+    margin: 1px;
     text-align: center;
-  }
-  .dropdown-content div:last-of-type{
-    border: 0;
   }
   .drpdownarrow{
     transition: 0.2s;
@@ -196,6 +201,7 @@
   }
   .quote{
     position: absolute;
+    color: white;
     right: 20px;
     font-size: 1.05rem;
     margin: 20px;
@@ -203,6 +209,8 @@
     height: fit-content;
     padding: 10px;
     border-radius: 5px;
+  }.quote .dropdown-content{
+    font-weight: bold;
   }
   .quote h3{
     margin: 0;

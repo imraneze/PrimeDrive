@@ -12,11 +12,18 @@ function Home() {
 
   const Clients = [
     {name:'Sofia Ait Bensalah',description:'An incredible car buying experience! Smooth, fast, and the car quality is beyond amazing. Highly recommend!',rating:5},
-    {name:'Adam Khattabi',description:'Customer service was very professional. I got a fantastic deal and the car arrived in perfect condition.',rating:4.5},
+    {name:'Adam Khattabi',description:'Customer service was very professional. I got a fantastic deal and the car arrived in perfect condition.',rating:2},
     {name:'Lina El Amrani',description:'The process was easy, and I love my new car. A few minor delays but the team kept me informed.',rating:4},
     {name:'Youssef Oulad Said',description:'Very trustworthy sellers. I paid with crypto and everything went smoothly. Thank you for the great service!',rating:4.5},
     {name:'Salma Zerouali',description:'Excellent selection of cars and flexible financing options. My dream car is now parked outside!',rating:5},
   ]  
+  function handleSubmit(e) {
+    e.preventDefault();
+    const email = document.getElementById('newsLetterEmail');
+    alert(`Thank you for subscribing with ${email.value}`);
+    console.log(`Email submitted: ${email.value}`);
+    email.value = '';
+  }
   return (
     <div className="Acceuil">
       <Header/>
@@ -56,14 +63,10 @@ function Home() {
           <h2 >Stay Updated</h2>
           <p >Subscribe to our newsletter for the latest cars, deals, and offers.</p>
           <form >
-            <div >
-              <input type="email"  placeholder="Enter your email" required />
-            </div>
-            <div >
-              <button type="submit" >Subscribe</button>
-            </div>
+              <input type="email" id='newsLetterEmail'  placeholder="Enter your email" required />
+              <button type="submit" onClick={handleSubmit} >Subscribe</button>
           </form>
-          <p >We respect your privacy. No spam, ever.</p>
+          <small >We respect your privacy. No spam, ever.</small>
         </div>
       </div>
       <Footer/>

@@ -4,19 +4,23 @@
     pointer-events: none;
     height: 200px;
     width: 100%;
-    border-bottom: 1px solid;
+    border: 1px solid;
     border-radius: 10px;
-    background-color:rgba(76, 76, 76, 0.499) ;
+    background-color:rgb(255, 255, 255) ;
+    box-shadow: 3px 3px 10px rgba(226, 226, 226, 0.329), 1px 1px 10px rgba(0, 0, 0, 0.537) inset;
 }
 .Card{
-    width: 30vw;
+    position: relative;
+    width: 420px;
+    background-color: rgba(0, 0, 0, 0.915);
+    color: white !important;
     flex-shrink: 0;
     border: 2px solid;
     border-radius: 10px;
     margin-left: 30px;
     margin-right: 30px;
     padding: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473), 5px 5px 10px white inset;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
     transition: 0.3s ease;
 }
 .Card:hover{
