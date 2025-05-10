@@ -5,8 +5,10 @@ import Navbar from './Navbar';
 
 function Header() {
   return (
+    <>
+    <img src="/header.jpg" alt="Logo" className='header-img'/>
     <div className='mHeader'>
-        <img src="/header.jpg" alt="Logo" />
+        
         <Navbar/>
         <div className='headerquote'>
             <h1 className='hq'>Engineered for the Bold.</h1>
@@ -14,6 +16,7 @@ function Header() {
         </div>
         <div className='morebtn'><a href="#more"><button>Explore More</button></a></div>
     </div>
+    </>
   )
 }
 

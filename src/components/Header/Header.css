@@ -67,7 +67,7 @@
     margin-top: 10px;
     display: inline-block;
   }
-  .mHeader img{
+  .header-img{
     position: absolute;
     object-fit: cover;
     object-position: center 60%;
