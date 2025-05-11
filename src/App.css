@@ -80,7 +80,7 @@ a{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.585);
   margin: 10px;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: clamp(1vw, 1.2rem, 2vw);
   text-align: center;
   background-color: rgba(67, 0, 0, 0.729);
   border-radius: 20px;
@@ -115,6 +115,8 @@ a{
   padding: 10px;
   margin: 50px auto;
   width: fit-content;
+  max-width: 80vw;
+  min-width: 40vw;
   border-radius: 10px;
   background-color: #b0caffa8;
   box-shadow: 5px 5px 10px #6e7fa0a8,5px 5px 10px rgba(255, 255, 255, 0.46) inset;
@@ -152,4 +154,12 @@ a{
 .newsLetter button:hover{
   background-color: #6e7fa0;
   box-shadow: 5px 5px 10px #6e7fa0a8,5px 5px 10px rgba(255, 255, 255, 0.46) inset;
+}
+.inventory{
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+.Pricefilter{
+  width: 300px;
 }

@@ -22,7 +22,7 @@ function Footer() {
         </div>
         <div className='SocialMedia'>
           <h2>Follow Us</h2>
-          <div className='container'>
+          <div className='container-fluid socials'>
           <a href='https://www.linkedin.com' target='_blank' ><FontAwesomeIcon className='socialsIcon' icon={faLinkedin} size='2xl'/></a>
           <a href='https://www.facebook.com' target='_blank' ><FontAwesomeIcon className='socialsIcon' icon={faFacebook} size='2xl'/></a>
           <a href='https://www.twitter.com' target='_blank' ><FontAwesomeIcon className='socialsIcon' icon={faTwitter} size='2xl'/></a>
@@ -31,7 +31,7 @@ function Footer() {
         </div>
       </div>
       <div className='Copyright'>
-        <small>© {new Date().getFullYear()} PrimeDrive. All rights reserved.</small>
+        <p>© {new Date().getFullYear()} PrimeDrive. All rights reserved.</p>
       </div>
     </div>
   )

@@ -2,9 +2,15 @@
     position: relative;
     height: 50vh;
     width: 100vw;
+    font-size: clamp(0.5vw, 1rem, 1.5vw);
     background: linear-gradient(white,rgba(0, 0, 0, 0.314) 10% 90%,black);
     color: white;
     padding: 10px;
+
+}
+.footer h2{
+    font-weight: bolder;
+    font-size: clamp(1vw, 1rem, 2.5vw);
 }
 .bgImg{
     position: absolute;
@@ -34,7 +40,7 @@
 }
 .SocialMedia{
     position: relative;
-    width: fit-content;
+    width: 20vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -45,10 +51,13 @@
     transform: scale(1.5);
 }
 .SocialMedia a{
-    margin: 20px;
+    margin: clamp(0.5vw,20px,1vw);
     transform: scale(1.2);
 }
 .AboutUs{
     width: 20vw;
     text-align: center;
+}
+.socials{
+    white-space: nowrap;
 }

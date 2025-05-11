@@ -13,7 +13,7 @@
 .homesection h3{
     margin: 0;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: clamp(1vw, 30px, 4vw);
     letter-spacing: 0.1px;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.975);
@@ -28,7 +28,7 @@
 .carssection{
     position: relative;
     overflow: hidden;
-    width: 97%;
+    width: 99%;
     display: flex;
 }
 .section{
@@ -81,11 +81,11 @@
     all: unset;
     font-family: inherit;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: clamp(1vw,1.2rem,3vw);
     position:absolute;
     height: fit-content;
     width: fit-content;
     right: 0;
-    top: 30%;
+    top: 20%;
     cursor: pointer;
 }

@@ -19,6 +19,8 @@ function Navbar() {
     }
     window.addEventListener('scroll', changeStyle);
   return (
+    <>
+      <div className="container-fluid w-100" style={{height:"13vh"}}></div>
       <nav className="navbar navbar-expand-lg ">
         <div className={`Navbar container-fluid ${navStyle == 'top'? '': (navStyle == 'MidTop')? 'NavMid':(navStyle == 'MidBottom')?'NavMid NavBottom':'NavBottom'}`}>
             <Link className='Logo navbar-brand' to="/"><h1>PrimeDrive</h1></Link>
@@ -34,6 +36,7 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
+            <div className='adaptive-navbar'></div>
             <ul className='mList navbar-nav'>
                 <li>
                    <Link to="/">Home</Link>
@@ -79,6 +82,7 @@ function Navbar() {
             </div>
         </div>
     </nav>
+    </>
   )
 }
 

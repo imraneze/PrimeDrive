@@ -11,13 +11,14 @@
 }
 .Card{
     position: relative;
-    width: 420px;
+    width: clamp(200px, 80vw, 400px);
     background-color: rgba(0, 0, 0, 0.915);
     color: white !important;
+    height: 350px;
     flex-shrink: 0;
     border: 2px solid;
     border-radius: 10px;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-right: 30px;
     padding: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);

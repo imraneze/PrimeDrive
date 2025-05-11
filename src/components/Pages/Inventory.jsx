@@ -43,10 +43,10 @@ function Inventory() {
         <form className='container-fluid row mb-3'>
           <div className="input-group col">
             <input type="text" id='Search' className="form-control" placeholder="Search for a car..." aria-label="Search for a car..." aria-describedby="SearchButton"/>
-            <button className="btn btn-outline-primary" type="submit" id="SearchButton" onClick={handleSearch}><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+            <button className="btn btn-outline-primary z-0" type="submit" id="SearchButton" onClick={handleSearch}><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
           </div>
-          <div className='col-8 row'>
-            <div className='col'>
+          <div className='col-auto row'>
+            <div className='col-auto'>
               <select className='form-select' id="Make" name="Make">
                 <option value="" selected>Select Make</option>
                 {MakeOptions.map((Make) => (
@@ -54,11 +54,11 @@ function Inventory() {
                 ))}
               </select>
             </div>
-            <div className='col input-group'>
+            <div className='col-auto input-group Pricefilter'>
               <input type="number" className='form-control' id="MinPrice" name="MinPrice" placeholder='Min Price' aria-label="Min Price"/>
               <input type="number" className='form-control' id="MaxPrice" name="MaxPrice" placeholder='Max Price' aria-label="Max Price"/>
             </div>
-            <div className='col'>
+            <div className='col-auto'>
               <select className='form-select' id="Year" name="Year">
                 <option value="" selected>Select Year</option>
                 {YearOptions.map((Year) => (
@@ -66,12 +66,12 @@ function Inventory() {
                 ))}
               </select>
             </div>
-            <button className='btn btn-outline-success col-1' type="submit" id="FilterButton" onClick={handleFilter}><FontAwesomeIcon icon={faFilter} /></button>
+            <button className='btn btn-outline-success col-auto' type="submit" id="FilterButton" onClick={handleFilter}><FontAwesomeIcon icon={faFilter} /></button>
           </div>
         </form>
         <div className='container-fluid'>
           {(cars.length>0)?(
-            <div className='row row-cols-3'>
+            <div className='row row-cols-auto inventory'>
             {cars.map((car) => (
             <div className='col mb-5 max-width-10' key={car.id}>
               <Card car={car} />
