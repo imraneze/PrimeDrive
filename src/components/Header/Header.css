@@ -69,7 +69,7 @@
   }
   .header-img{
     position: absolute;
-    object-fit: cover;
+    object-fit:cover;
     object-position: center 60%;
     margin: -10px;
     z-index: -2;
@@ -260,42 +260,4 @@
     transform:rotate(-90deg);
     color: rgb(0, 0, 0);
     transition: 0.2s;
-  }
-
-  @media (max-width: 768px) {
-    .quote{
-      position: fixed;
-      top: 10vh;
-      margin: 10px;
-      z-index: 2;
-    }
-    .Navbar{
-      position: fixed;
-      top: 0;
-      height: 13vh;
-      width: 100vw;
-      left: 0;
-    }
-    .adaptive-navbar{
-      position: fixed;
-      height: 100vh;
-      left: 0;
-      width: 100vw;
-      z-index: -1;
-      background-color: black;
-    }
-    .mList{
-      position: fixed;
-      left: 0%;
-      bottom: 0;
-      margin: 0;
-      padding: 0;
-      transform: translateY(-30%);
-    }
-    .headerquote{
-      font-size: 1.5rem;
-    }
-    .subline{
-      font-size: 1.2rem;
-    }
   }

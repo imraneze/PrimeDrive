@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Header/Navbar'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import CarsData from '../CarsData'
 import Hottest from '../Body/Hottest/Hottest'
@@ -19,23 +20,26 @@ function CarPage(props) {
   return (
     <div>
         <Navbar/>
-    <div className='container-fluid position-relative top-100 start-0 row' style={{height: "50vh" , marginTop: "15vh", marginBottom:"15vh"}}>
-    <div className='col'>
-      <model-viewer
-        src={props.car.carmodel}
-        alt={`A 3D model of ${props.car.name}`}
-        ar
-        camera-controls
-        disable-pan
-        camera-orbit={orbit}
-        field-of-view={FOV}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        className="w-100 h-100 top-0 start-0"
-      />
-    </div>
-        <div className='col bg-dark text-white'>
-            <h1>{props.car.name}</h1>
+    <div className='card position-relative m-5 CarPage'>
+        <div className='PageModel card-img-top'>
+          <model-viewer
+            src={props.car.carmodel}
+            alt={`A 3D model of ${props.car.name}`}
+            ar
+            camera-controls
+            disable-pan
+            camera-orbit={orbit}
+            field-of-view={FOV}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            style={{width: "100%", height: "100%",}}  
+          />
+        </div>
+        <div className='bg-dark text-white p-3 card-body'>
+
+            <h1 className='text-center'>Car Details</h1>
+            <div className='card-text'>
+            <h2>{props.car.name}</h2>
             <p>{props.car.description}</p>
             <p>Price: {props.car.price} DH</p>
             <p>Make: {props.car.Make}</p>
@@ -45,6 +49,8 @@ function CarPage(props) {
             <p>Kilometrage: {props.car.Kilometrage} km</p>
             <p>Condition: {props.car.Condition}</p>
             <p>Engine: {props.car.Engine}</p>
+            <button className='btn btn-success'><Link to={'/Schedule_a_Test_Drive'}>Book Test Drive</Link></button>
+            </div>
         </div>
      </div>
         <div className='container-fluid'>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hottest.css'
 import Card from '../Card/Card'
+import { Link } from 'react-router-dom'
 
 function Hottest(props) {
   
@@ -8,7 +9,7 @@ function Hottest(props) {
     <div className='homesection'>
       <div className='top'>
         <h3>{props.title} <hr /></h3>
-        <button>SEE MORE {'>'}</button>
+        <button className='btn btn-outline-danger'><Link to={'/Inventory'}>SEE MORE {'>'}</Link></button>
       </div>
         <div className='carssection'>
           <div className='fade-left'/>

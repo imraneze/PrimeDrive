@@ -49,7 +49,7 @@ function Navbar() {
                             <div className="row row-cols-2">
                                 {MakeOptions.map((make) => (
                                     <div className="col" key={make}>
-                                        <Link to={`/Inventory/${make}`}>{make}</Link>
+                                        <Link to={`/Inventory`}>{make}</Link>
                                     </div>
                                 ))}
 

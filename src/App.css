@@ -163,3 +163,58 @@ a{
 .Pricefilter{
   width: 300px;
 }
+.CarPage{
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.PageModel{
+  position: relative;
+  height: 75vh;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+    .quote{
+      position: fixed;
+      top: 10vh;
+      margin: 10px;
+      z-index: 2;
+    }
+    .Navbar{
+      position: fixed;
+      top: 0;
+      height: 13vh;
+      width: 100vw;
+      left: 0;
+    }
+    .adaptive-navbar{
+      position: fixed;
+      height: 100vh;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      background-color: black;
+    }
+    .mList{
+      position: fixed;
+      left: 0%;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      transform: translateY(-30%);
+    }
+    .headerquote{
+      font-size: 1.5rem;
+    }
+    .subline{
+      font-size: 1.2rem;
+    }
+    .CarPage{
+      flex-direction: column;
+    }
+    .PageModel{
+      height: 50%;
+      width: 75vw;
+    }
+  }
